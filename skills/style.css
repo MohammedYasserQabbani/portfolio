@@ -148,6 +148,10 @@ body {
         font-size: 25px;
     }
 
+    .wrapper {
+        width: 90vw;
+    }
+
     .wrapper .center-line {
         left: 40px ;
     }
