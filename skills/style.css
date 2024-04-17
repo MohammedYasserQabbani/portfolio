@@ -24,6 +24,17 @@ body {
     color: var(--text-color);
 }
 
+.heading-skills {
+    margin: 25px auto;
+    font-size: 30px;
+    width: fit-content;
+}
+
+.heading-skills span {
+    color: var(--main-color);
+}
+
+
 .wrapper {
     width: 1080px;
     margin: 50px auto; 
@@ -130,6 +141,13 @@ body {
 }
 
 @media(max-width: 790px) {
+
+    .heading-skills {
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 25px;
+    }
+
     .wrapper .center-line {
         left: 40px ;
     }
