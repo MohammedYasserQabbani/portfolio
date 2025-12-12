@@ -1,0 +1,91 @@
+@import url('main.css');
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-content {
+    flex: 0 0 60%;           /* النص يأخذ 60% من المساحة */
+}
+
+.home-img {
+    flex: 0 0 40%;           /* الصورة تأخذ 40% من المساحة */
+}
+
+.home-content h3 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.home-content h3:nth-of-type(2) {
+    margin-bottom: 2rem;
+}
+
+.home-content h1 {
+    font-size: 4.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.home-img img {
+    width: 30vw;
+    height: auto;
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(-10rem) scale(1.3);
+    }
+    50%{
+        transform: translateY(-12.4rem) scale(1.3);
+    }
+    100%{  
+        transform: translateY(-10rem) scale(1.3);
+    }
+}
+
+.home-content p {
+    font-size: 1.6rem;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover {
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    font-weight: 600;
+    letter-spacing: .1rem;
+    transition: .5 ease;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+

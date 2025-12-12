@@ -1,0 +1,47 @@
+@import url('main.css');
+
+.skills h2 {
+    margin-bottom: 5rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.skills-container .skills-box {
+    position: relative;
+    background: var(--second-bg-color);
+    padding: 3rem 3rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.skills-container .skills-box:hover {
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.skills-box i {
+    font-size: 5rem;
+    color: var(--main-color);
+}
+
+.skills-box p {
+    font-size: 2.1rem;
+    margin: 1rem 0 1rem;
+}
+
+.skills .btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem ;
+    width: 20rem;
+    text-align: center;
+    
+}
