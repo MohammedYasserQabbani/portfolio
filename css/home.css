@@ -7,11 +7,15 @@
 }
 
 .home-content {
-    flex: 0 0 60%;           /* النص يأخذ 60% من المساحة */
+    flex: 0 0 60%;          
+    position: relative;   
+    z-index: 2;              
 }
 
 .home-img {
-    flex: 0 0 40%;           /* الصورة تأخذ 40% من المساحة */
+    flex: 0 0 40%;           
+    position: relative;
+    z-index: 1;
 }
 
 .home-content h3 {
@@ -89,3 +93,27 @@
     box-shadow: none;
 }
 
+@media (max-width: 768px) {
+    .home-content {
+        flex: 0 0 100%;        
+        margin-bottom: 2rem;
+        text-align: center;   
+    }
+
+    .home-img {
+        flex: 0 0 100%;       
+        text-align: center;
+    }
+
+    .home-img img {
+        width: 60%;           
+    }
+
+    .social-media a {
+        margin: 1rem 0.5rem;  
+    }
+
+    .btn {
+        margin-top: 1rem;       
+    }
+}
